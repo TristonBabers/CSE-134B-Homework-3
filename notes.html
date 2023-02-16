@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon-16x16.png" sizes="16x16">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -42,7 +43,8 @@
     <h3>UCSD Course Planning Table</h3>
     <table>
         <caption>🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦⬛🟦</caption>
-        <th colspan="5">Course Planner</th>
+        <thead>
+            <th colspan="5">Course Planner</th>
         <colgroup>
             <col class="year">
             <col class="fall">
@@ -50,65 +52,123 @@
             <col class="spring">
             <col class="summer">
         </colgroup>
-        <tr>
-            <th>Term</th>
-            <th>Fall</th>
-            <th>Winter</th>
-            <th>Spring</th>
-            <th>Summer</th>
-        </tr>
-        <tr>
-            <th>2020-21</th>
-            <td>
-                <ul>
-                    <li>CSE 11 - 4.0</li>
-                    <li>ECE 15 - 4.0</li>
-                    <li>WCWP 10A - 4.0</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>CSE 12 - 4.0</li>
-                    <li>CSE 15L - 2.0</li>
-                    <li>AAS 10 - 4.0</li>
-                    <li>WCWP 10A - 4.0</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>CSE 20 - 4.0</li>
-                    <li>WCWP 10A - 4.0</li>
-                    <li>Math 20B - 4.0</li>
-                </ul>
-            </td>
-            <td>N/A</td>
-        </tr>
-        <tr>
-            <th>2021-22</th>
-            <td>
-                <ul>
-                    <li>CSE 21 - 4.0</li>
-                    <li>Math 20C - 4.0</li>
-                    <li>Phys 2A - 4.0</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>CSE 30 - 4.0</li>
-                    <li>Math 20D - 4.0</li>
-                    <li>Phys 2B - 4.0</li>
-                    <li>Math 18 - 4.0</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>CSE 100 - 4.0</li>
-                    <li>Phys 2C - 4.0</li>
-                    <li>ECE 35 - 4.0</li>
-                </ul>
-            </td>
-            <td>N/A</td>
-        </tr>
+            <tr>
+                <th>Term</th>
+                <th>Fall</th>
+                <th>Winter</th>
+                <th>Spring</th>
+                <th>Summer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>2020-21</th>
+                <td>
+                    <ul>
+                        <li>CSE 11 - 4.0</li>
+                        <li>ECE 15 - 4.0</li>
+                        <li>WCWP 10A - 4.0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CSE 12 - 4.0</li>
+                        <li>CSE 15L - 2.0</li>
+                        <li>AAS 10 - 4.0</li>
+                        <li>WCWP 10A - 4.0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CSE 20 - 4.0</li>
+                        <li>WCWP 10A - 4.0</li>
+                        <li>Math 20B - 4.0</li>
+                    </ul>
+                </td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <th>2021-22</th>
+                <td>
+                    <ul>
+                        <li>CSE 21 - 4.0</li>
+                        <li>Math 20C - 4.0</li>
+                        <li>Phys 2A - 4.0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CSE 30 - 4.0</li>
+                        <li>Math 20D - 4.0</li>
+                        <li>Phys 2B - 4.0</li>
+                        <li>Math 18 - 4.0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CSE 100 - 4.0</li>
+                        <li>Phys 2C - 4.0</li>
+                        <li>ECE 35 - 4.0</li>
+                        <li>Phil 27 - 4.0</li>
+                    </ul>
+                </td>
+                <td>N/A</td>
+            </tr>
+            <th>2022-23</th>
+                <td>
+                    <ul>
+                        <li>Phil 28 - 4.0</li>
+                        <li>CSE 110 - 4.0</li>
+                        <li>ECE 65 - 4.0</li>
+                        <li>ECE 45 - 4.0</li>
+                    </ul>
+                </td>
+                <td class="currentTerm">
+                    <ul>
+                        <li>CSE 134B - 4.0</li>
+                        <li>Math 20D - 4.0</li>
+                        <li>ECE 101 - 4.0</li>
+                        <li>HIEU 111 - 4.0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CSE 140 - 4.0</li>
+                        <li>CSE 140L - 4.0</li>
+                        <li>ECE 108 - 4.0</li>
+                        <li>CSE 120 - 4.0</li>
+                    </ul>
+                </td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <th>2023-24</th>
+                <td>
+                    <ul>
+                        <li>CSE 141 - 4.0</li>
+                        <li>CSE 141L - 4.0</li>
+                        <li>ECE 109 - 4.0</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="uncertainSchedule">
+                        <li>ECE 111 or 118</li>
+                        <li>CSE or ECE Elective</li>
+                        <li>CSE or ECE Elective</li>
+                        <li>Second History Course</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="uncertainSchedule">
+                        <li>Technical Elective</li>
+                        <li>CSE or ECE Elective</li>
+                        <li>CSE or ECE Elective</li>
+                        <li>Make Up ECE 35 Credit</li>
+                    </ul>
+                </td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
     </table>
 </section>
 <section id="debugNotes">
