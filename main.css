@@ -1,5 +1,80 @@
 * {
     /** Idk about this font*/
+    --navBarFont: Tahoma;
+    --subHeadingFont: calibri;
     font-family: 'Roboto', sans-serif;
+
+    --navColorPrimary: #009efa;
+    --navColorSecondary: rgb(0, 101, 168);
 }
+
+/** Reset CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}   
+
+body {
+    display: grid;
+    grid-template: 1fr / 1fr 3fr 1fr / 1fr;
+}
+
+h1 {
+    position: absolute;
+    top: 20rem;
+}
+
+#homeHeader picture img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/** General Navigation */
+
+header {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/** Desktop Navigation */
+@media only screen and (min-width: 768px) {
+    nav ul li a {
+        font-family: var(--navBarFont);
+        font-size: calc(8px + 1.5vw);
+        display: block;
+        text-decoration: none;
+        font-weight: 1000;
+        color: black;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: calc(12px + 2.5vw);;
+        background: linear-gradient(var(--navColorSecondary), var(--navColorPrimary));
+    
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0.5ch;
+    }
+}
+
+/** Mobile Navigation */
+@media mobile {
+
+}
+
 

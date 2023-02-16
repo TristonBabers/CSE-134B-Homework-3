@@ -8,17 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon-16x16.png" sizes="16x16">
+    <meta name="viewport" content="user-scalable=no" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet" media="screen">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Triston Babers Portfolio</h1>
+<header id="homeHeader">
+    <noscript>
+        <h1>Triston Babers Portfolio</h1>
+    </noscript>
     <!-- Reminder to remove width & height when switching to CSS! -->
-
-    <img width="1280" height="720" src="assets/images/Portfolio%20Site.jpg" alt="Image of Triston Babers at his Computer, he looks rather busy" draggable="false">
+    <picture id="bannerImg">
+        <img width="1280" height="720" src="assets/images/Portfolio%20Site.jpg" alt="Image of Triston Babers at his Computer, he looks rather busy" draggable="false">
+    </picture>
     <nav>
         <ul>
             <li>
@@ -42,7 +46,7 @@
         </ul>
     </nav>
 </header>
-<Main>
+<main>
 <section id="about">
     <h2>About Me</h2>
     <p>I am a Computer Engineering Major at UCSD. My favorite hobbies are Reading, Playing Videogames, and Watching Anime.</p>
@@ -70,11 +74,8 @@
         <p>Reminder: I want to make the website embedding look better somehow</p>
     </template>
 </section>
-</Main>
+</main>
 <br>
-
-
-
 <hr>
 <footer id="contact">
     <p>Email: Triston.Babers.Official@gmail.com</p>
