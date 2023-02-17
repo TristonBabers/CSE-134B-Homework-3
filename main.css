@@ -304,7 +304,7 @@ header nav ul {
         padding-right: 1ch; 
         color: var(--backgroundDark);
     }
-
+    /*
     nav {
         position: fixed;
         top: 0;
@@ -321,7 +321,7 @@ header nav ul {
         text-align: left;
     }
 
-    /* Manipulate Hamburgers */
+    /* Manipulate Hamburgers 
     .open {
         display: block;
     }
@@ -350,7 +350,7 @@ header nav ul {
         display: block;
     }
 
-    /* Do CSS Wizardry */
+    /* Do CSS Wizardry 
     #openHamburger:target ~ div li {
         height: 100;
     }
@@ -371,7 +371,7 @@ header nav ul {
         right: 2vh;
         display: block;
         float: right;
-    }
+    }*/
     /** Link to Stack Overflow where I learned these CSS shenanigans:
      * https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css
      */
