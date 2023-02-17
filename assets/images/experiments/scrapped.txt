@@ -4,3 +4,39 @@ marquee {
         color:goldenrod;
         font-size: 50px;
 }
+
+
+/** Home Page only CSS */
+#homeBody {
+    display: grid;
+    grid-template-columns: 1200px 1fr 120px;
+    grid-template-rows: 1fr 1fr 100px 1fr 1fr;
+    
+    grid-template-areas:
+    "bannerImg bannerImg bannerImg"
+    "about about aboutImg"
+    "resumeLeft resume resumeRight"
+    "projects projects projects"
+    "fotter footer footer";
+
+    
+                           
+    grid-column-gap: 0.2vw;
+}
+
+#bannerImg {
+    grid-area: bannerImg;
+    object-fit: cover;
+}
+#about {
+    grid-area: about;
+}
+#about picture {
+    grid-area: aboutImg;
+}
+#resume {
+    grid-area: resume;
+}
+#projects {
+    grid-area: projects;
+}

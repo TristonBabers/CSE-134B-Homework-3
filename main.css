@@ -1,21 +1,25 @@
-* {
+:root {
     /** Idk about this font !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     --navBarFont: Tahoma;
     --subHeadingFont: calibri;
+    /** Default Font */
     font-family: 'Roboto', sans-serif;
 
     --navColorPrimary: #009efa;
     --navColorSecondary: rgb(0, 101, 168);
+    --navFontHover: #f6f647;
+
+    --backgroundLight: #FFF;
+    --backgroundDark: #000;
 }
 
 /** Reset CSS */
-body, html {
+* {
     margin: 0;
     padding: 0;
 }
 
 html {
-    height: 100%;
     scroll-behavior: smooth;
 }   
 
@@ -28,70 +32,66 @@ p, h1, h2, h3 {
     color: white;
 }*/
 
-/** Home Page only CSS */
-#homeBody {
-    display: grid;
-    grid-template-areas:
-    "bannerImg bannerImg bannerImg"
-    "about about aboutImg"
-    "resumeLeft resume resumeRight"
-    "projects projects projects"
-    "fotter footer footer";
+/** Home-Page Specific CSS CSS */
 
-    grid-template-columns: 100% /
-                        25% 1fr 25% /
-                        auto 1fr auto /
-                        auto 1fr auto /
-                        auto 1fr auto;
-    grid-template-rows: 1fr / 1fr / 1fr;
-                           
-                           
-                           
-    grid-column-gap: 0.2vw;
-}
-
-#bannerImg {
-    grid-area: bannerImg;
-}
-
-#about {
-    grid-area: about;
-}
-
-#about picture {
-    grid-area: aboutImg;
-}
-
-#resume {
-    grid-area: resume;
-}
-
-#projects {
-    grid-area: projects;
+#homeHeader h1 {
+    display: none;
 }
 
 h1 {
-    position: absolute;
-    top: 20rem;
+    font-weight: 300;
+    position: static;
+    text-align: center;
+    display: block;
+    top: 8rem;
+    padding-bottom: 2rem;
+    background-color: rgb(141, 208, 255);
 }
 
-#homeHeader picture img{
+#homeHeader picture img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+section {
+    max-width: 100%;
 }
 
 /** General CSS */
-footer {
-    grid-area: footer;
+
+
+/** Notes Page CSS */
+td {
+    border: solid --backgroundDark;
 }
 
+th {
+    background-color: var(--backgroundLight);
+}
 
-
+.fall {
+    background-color: #ffec96;
+}
+.winter {
+    background-color: #96ecff;
+}
+.spring {
+    background-color: #96ffb4;
+}
+.summer {
+    background-color: #ffab96;
+}
+#currentTerm {
+    background-color: lightYellow;
+}
 
 /** Other Page only CSS */
 body:not(#homeBody) {
 
 }
+
+/** Notes Page Stuff */
+
+
 
 /** General Navigation */
 
@@ -104,21 +104,31 @@ nav ul li {
 }
 
 /** Desktop Navigation */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
+    html {
+        /** We can't see the space covered by Nav */
+        margin-top: calc(12px + 2.5vw);
+    }
+
     nav ul li a {
         font-family: var(--navBarFont);
         font-size: calc(8px + 1.5vw);
         display: block;
         text-decoration: none;
         font-weight: 1000;
-        color: black;
+        color: var(--fontColor);
+    }
+
+    nav ul li a:hover {
+        color: rgb(239, 5, 5);
+        transition: color 0.2s ease-in;
     }
     
     nav {
         position: fixed;
         top: 0;
         width: 100%;
-        height: calc(12px + 2.5vw);;
+        height: calc(12px + 2.5vw);
         background: linear-gradient(var(--navColorSecondary), var(--navColorPrimary));
     
     }
@@ -130,9 +140,12 @@ nav ul li {
     }
 }
 
-/** Mobile Navigation */
-@media mobile {
+/** Tablet Navigation */
+@media mobile, (max-width: 868px) {
 
 }
 
-
+/** mobile Navigation */
+@media mobile and (max-width: 480px) {
+    
+}
