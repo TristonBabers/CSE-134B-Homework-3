@@ -14,12 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap&family=Lato:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <!-- Preload Images -->
 </head>
 <body id="homeBody">
 <header id="homeHeader">
     <!-- Reminder to remove width & height when switching to CSS! -->
     <picture id="bannerImg">
-        <img width="1280" height="720" src="assets/images/Portfolio%20Site.jpg" alt="Image of Triston Babers at his Computer, he looks rather busy" draggable="false">
+        <source media="(max-width: 699px)" srcset="/assets/images/Banner/Portfolio-Mobile.jpg">
+        <source media="(min-width: 700px)" srcset="/assets/images/banner/Portfolio-Large.webp">
+        <img src="/assets/images/banner/Portfolio-Large.webp" alt="Image of Triston Babers at his Computer, he looks rather busy">
     </picture>
     <nav>
         <ul>

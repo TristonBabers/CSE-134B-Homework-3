@@ -5,6 +5,13 @@ marquee {
         font-size: 50px;
 }
 
+    <picture id="bannerImg">
+        <source srcset="/assets/images/banner/Portfolio Mobile.jpg" media="(max-width: 500px)">
+    </picture>
+
+        #bannerImg {
+        content:url("/assets/images/banner/Portfolio%20Mobile.jpg");
+    }
 
 /** Home Page only CSS */
 #homeBody {

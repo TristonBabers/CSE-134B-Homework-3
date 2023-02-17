@@ -164,6 +164,7 @@ nav ul li {
     display: inline-block;
 }
 
+
 /** Desktop Navigation */
 @media screen and (min-width: 1000px) {
     html {
@@ -206,11 +207,14 @@ nav ul li {
 }
 
 /** Tablet Navigation */
-@media mobile, (max-width: 1000px) {
-
+/* NOTE TO SELF: If I'm changing these breakpoints, I also need to 
+ * update the preload and media attributes for the banner images!!! */
+@media mobile, (max-width: 1200px) {
 }
 
+
+
 /** mobile Navigation */
-@media mobile and (max-width: 500px) {
-    
+@media mobile and (max-width: 700px) {
+
 }
