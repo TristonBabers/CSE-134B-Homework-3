@@ -1,5 +1,4 @@
 :root {
-    /** Idk about this font !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     --navBarFont: 'Lato', Tahoma;
     --headingFont: 'Dancing Script', cursive, sans;
     --subHeadingFont: calibri;
@@ -136,14 +135,6 @@ header:not(#homeHeader) {
     grid-column: 1 / 3
 }
 
-body:not(#homeBody) section:nth-child(even) {
-    grid-column: 1 / 2;
-}
-
-body:not(#homeBody) section:nth-child(odd) {
-    grid-column: 2 / 3;
-}
-
 body:not(#homeBody) footer {
     grid-column: 1 / 3
 }
@@ -153,15 +144,6 @@ header:not(#homeHeader) p {
     padding: 0 0 1rem 1.5rem;
     font-size: 2rem;
     font-weight: 600;
-}
-
-/** All Devices Navigation */
-header {
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
 }
 
 
@@ -204,17 +186,137 @@ nav ul li {
     header nav ul {
         gap: 5px;
     }
+
+    body:not(#homeBody) section:nth-child(even) {
+        grid-column: 1 / 2;
+    }
+    
+    body:not(#homeBody) section:nth-child(odd) {
+        grid-column: 2 / 3;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    #hamburger {
+        display: none;
+    }
 }
 
-/** Tablet Navigation */
+/** Small or Tablet Navigation */
 /* NOTE TO SELF: If I'm changing these breakpoints, I also need to 
  * update the preload and media attributes for the banner images!!! */
-@media mobile, (max-width: 1200px) {
+@media (max-width: 1000px) and (min-width: 700px) {
+    html {
+        /** We can't see the space covered by Nav, so resize page */
+        margin-top: calc(12px + 2.5vw);
+    }
+
+    nav ul li a {
+        font-family: var(--navBarFont);
+        font-size: calc(8px + 1.5vw);
+        display: block;
+        text-decoration: none;
+        font-weight: 1000;
+        /* Color background when hovering a navlink*/
+        padding-top: 0;
+        padding-bottom: calc((12px + 2.5vw)/4);
+        padding-left: 1ch;
+        padding-right: 1ch; 
+        color: var(--backgroundDark);
+    }
+
+    nav ul li a:hover {
+        color: var(--navFontHover);
+        transition: color 0.2s ease-in;
+        background-color: var(--navBackgroundHover);
+        transition: background-color 0.1s linear;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: calc(12px + 2.5vw);
+        background: linear-gradient(var(--navColorSecondary), var(--navColorPrimary));
+    }
+
+    header nav ul {
+        gap: 5px;
+    }
+
+    body:not(#homeBody) section {
+        grid-column: 1 / 3;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    #hamburger {
+        display: none;
+    }
 }
 
+/** Mobile Navigation */
+@media (max-width: 700px) {
+    h2, h3, p, aside, section, picture {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 
+    iframe {
+        display: none;
+    }
 
-/** mobile Navigation */
-@media mobile and (max-width: 700px) {
+    nav ul li a {
+        font-family: var(--navBarFont);
+        font-size: calc(8px + 1.5vw);
+        display: block;
+        text-decoration: none;
+        font-weight: 1000;
+        /* Color background when hovering a navlink*/
+        padding-top: 0;
+        padding-bottom: calc((12px + 2.5vw)/4);
+        padding-left: 1ch;
+        padding-right: 1ch; 
+        color: var(--backgroundDark);
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: calc(12px + 2.5vw);
+        background: linear-gradient(var(--navColorSecondary), var(--navColorPrimary));
+    }
 
+    header nav ul {
+        gap: 5px;
+    }
+
+    body:not(#homeBody) section {
+        grid-column: 1 / 3;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    #hamburger {
+        display: block;
+    }
 }
