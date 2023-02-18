@@ -279,10 +279,7 @@ header nav ul {
 }
 
 /** Mobile Navigation */
-/* The Breakpoint for mobile display is 700px, but I set it to
- * min width 1 so it will be default for anything that's not within the others.
- */
-@media (mobile) or (min-width: 1px) {
+@media (mobile) or (max-width: 700px) {
     html {
         /** We can't see the space covered by Nav, so resize page */
         margin-top: 13vh;
