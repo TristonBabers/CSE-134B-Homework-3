@@ -13,6 +13,7 @@
 
     --backgroundLight: #FFF;
     --backgroundDark: #000;
+    --footerBackground: #89b5bb;
 }
 
 /** Reset CSS */
@@ -72,6 +73,22 @@ h2 {
     margin-bottom: 1ch;
     font-family: var(--subHeadingFont);
     font-size: 3rem;
+}
+
+/** Footer Styling */
+hr {
+    border-top: 0.3ch solid var(--backgroundDark);
+    
+}
+
+footer {
+    background-color: var(--footerBackground);
+    font-family: var(--subHeadingFont);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+footer a {
+    color: var(--backgroundDark);
 }
 
 /** Notes & Experiments Related CSS */
