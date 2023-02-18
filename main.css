@@ -279,7 +279,10 @@ header nav ul {
 }
 
 /** Mobile Navigation */
-@media (mobile) or (max-width: 700px) {
+/* The Breakpoint for mobile display is 700px, but I set it to
+ * min width 1 so it will be default for anything that's not within the others.
+ */
+@media (mobile) or (min-width: 1px) {
     html {
         /** We can't see the space covered by Nav, so resize page */
         margin-top: 13vh;
@@ -320,7 +323,6 @@ header nav ul {
     aside img {
         width: 100%;
     }
-
     
     body:not(#homeBody) section {
         grid-column: 1 / 3;
