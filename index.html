@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon-16x16.png" sizes="16x16">
-    <meta name="viewport" content="user-scalable=no">
     <!-- Preload Images -->
     <link rel="preload" as="img" href="/assets/images/banner/Portfolio-Mobile.jpg" media="(mobile) or (max-width: 700px)">
     <link rel="preload" as="img" href="/assets/images/banner/Portfolio-Large.webp" media="not (mobile) and (max-width: 1500px)">
@@ -26,24 +25,18 @@
         <source media="not (mobile) and (max-width: 1500px)" srcset="/assets/images/banner/Portfolio-Large.webp">
         <img src="/assets/images/banner/Portfolio-Large.webp" alt="Image of Triston Babers at his Computer, he looks rather busy">
     </picture>
+    <button id="openHamburger"></button>
+    <a href="#openHamburger" class="hamToggleOn">
+        <img class="hamburger" src="assets/images/hamburger.webp" width="60px", height="60px">
+    </a>
+    <a href="#closeHamburger" class="hamToggleOff">
+        <img class="hamburger" src="assets/images/hamburger.webp" width="60px", height="60px">
+    </a>
     <nav>
         <ul>
             <li>
                 <a href="#about">Triston Babers</a>
             </li>
-            <!--<
-            <div id="#openHamburger"></div>
-            <div  id="#closeHamburger"></div>
-        <div>
-            <a class="open" href="#openHamburger">
-                OPEN TEXT
-                img class="hamburger" src="assets/images/hamburger.webp" width="60px", height="60px">
-            </a>
-            <a class="close" href="#closeHamburger">
-                CLOSE TEXT
-                <img class="hamburger" src="assets/images/hamburger.webp" width="60px", height="60px"
-            </a>>-->
-            
             <li>
                 <a href="#resume">Resume</a>
             </li>
@@ -59,8 +52,6 @@
             <li>
                 <a href="experiments.html">Experiments</a>
             </li>
-        <!--
-        </div>-->
         </ul>
     </nav>
 </header>
